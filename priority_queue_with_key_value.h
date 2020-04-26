@@ -22,6 +22,7 @@
 	struct comp{
 		bool operator()(const node& a,const node& b){
 			return a.value>b.value;
+			//ascending order
 		}
 	};
 
