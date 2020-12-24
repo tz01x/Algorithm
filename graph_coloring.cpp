@@ -92,9 +92,9 @@ public:
 int main()
 {
     int n=3;
-    int a[3][3]= {{0,1,0},{1,0,1},{0,1,0}};
+    int a[3][3]= {{0,1,0},{1,0,1},{0,1,0}};//3x3 adjacent matrix 
     graphColloring *g;
-    g= new graphColloring(a,(int)n,1);
+    g= new graphColloring(a,n,2);
     g->StartGraphColloring(0);
 
 
