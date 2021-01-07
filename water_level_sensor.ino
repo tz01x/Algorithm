@@ -8,7 +8,7 @@ const int blue_light=7;
 const int white_light=8;
 const int flickering_light=6;
 const int buzzer=9;
-
+long last_counter = -1;
 const int MAX_SIZE = 8;
 long arr[MAX_SIZE] = { 0 };//to store last few sensor
 
@@ -134,7 +134,7 @@ float get_probability (long item)
 
 }
 long Check_for_error(long curr_water_lv_in_cm){
-  static long last_counter = -1;
+  
         
       push (curr_water_lv_in_cm);
       if (last_counter == -1)
