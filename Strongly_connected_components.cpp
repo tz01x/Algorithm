@@ -26,7 +26,7 @@ void dfs_visit(int idx)
     _time+=1;
     color[idx]=2;
     f[idx]=_time;
-    s.push(idx);
+    s.push(idx); //stack store who has last finish time at the top
 
 }
 void dfs(int n)
