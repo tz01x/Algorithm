@@ -1,7 +1,7 @@
-import random
+import secrets
 
 def main():
-    n=[random.randint(0,25)%25 for _ in range(5) ]
+    n=[secrets.SystemRandom().randint(0,25)%25 for _ in range(5) ]
     print('numbers ',n)
     target=5;
     hasmap={} #initial hasmap

@@ -1,5 +1,5 @@
 
-import random
+import secrets
 
 class QuickSort:
     def __init__(self,arr):
@@ -85,7 +85,7 @@ class QuickSort:
 
 arr=[5,9,2,6,20,1,3,6,2,7,58,5,6,7,5,8,85,1,65,7,2,5,8,7,1,558,8,4,5,85258,548,5,85555558,4]
 
-random.shuffle(arr)
+secrets.SystemRandom().shuffle(arr)
 print(arr)
 qs=QuickSort(arr)
 arr=qs.getlist()
